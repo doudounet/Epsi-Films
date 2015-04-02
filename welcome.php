@@ -28,9 +28,9 @@
                 <div class="grid_12">
                     <nav>
                         <ul class="menu">
-                            <li><a class="active" href="index.html">Rechercher</a></li>
-                            <li><a href="pricing.html">Qui sommes-nous ? </a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a class="active" href="welcome.php">Rechercher</a></li>
+                            <li><a href="presentation.php">Qui sommes-nous ? </a></li>
+                            <li><a href="contact.php">Nous contacter</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,7 +43,7 @@
             <div class="container_12">
                 <div class="grid_9">
                     <h1>
-                        <a class="logo" href="index.html">EPS<strong>I</strong>mdb</a>
+                        <a class="logo" href="welcome.php">EPS<strong>I</strong>mdb</a>
                         <span>Enjoy</span>
                     </h1>
                 </div>
@@ -174,7 +174,29 @@
         </div>
     </div>
 </section>
-
+<footer>
+    <div class="main">
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_4">
+                    <div>EpsIMDB &copy; 2015</div>
+                    <!-- {%FOOTER_LINK} -->
+                </div>
+                <div class="grid_4">
+                    <span class="phone-numb">01-23-45-67-89</span>
+                </div>
+                <div class="grid_4">
+                    <ul class="list-services">
+                        <li><a href="#"></a></li>
+                        <li><a class="item-2" href="#"></a></li>
+                        <li><a class="item-3" href="#"></a></li>
+                        <li><a class="item-4" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script type="text/javascript">
     $(window).load(function() {

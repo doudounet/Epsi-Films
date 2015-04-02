@@ -5,14 +5,14 @@ mark, rp, rt, ruby, summary, time {display:inline}
 html {width:100%}
 body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#262626;min-width:980px;background:#fff}
 .ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
-.bg-top-shadow {width:100%; background:url(../img/bg-top-shadow.png) center bottom repeat-x; padding:40px 0 52px}
+.bg-top-shadow {width:100%; padding:40px 0 52px}
 	#page3 .bg-top-shadow {padding:40px 0 35px}
 	#page4 .bg-top-shadow {padding:40px 0 60px}
 	#page5 .bg-top-shadow {padding:40px 0 62px}
-.bg-top {width:100%; background:url(../img/bgg-top-tail.jpg) center top repeat-x}
-.bg-top-2 {width:100%; background:url(../img/bgg-top-tail2.jpg) center top repeat-y}
-.bg {width:100%; background:url(../img/bgg-top.jpg) center top no-repeat}
-.bg-bot {width:100%; background:url(../img/bgg-bot-tail.gif) center top repeat-x #fff; padding:30px 0 55px}
+.bg-top {width:100%}
+.bg-top-2 {width:100%}
+.bg {width:100%}
+.bg-bot {width:100%}
 	#page3 .bg-bot, #page4 .bg-bot {padding:30px 0 49px}
 .main {width:980px;padding:0;margin:0 auto;font-size:0.8125em;line-height:1.6153em}
 a {color:#ff9601; outline:none}
