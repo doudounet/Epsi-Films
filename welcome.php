@@ -9,6 +9,7 @@
     <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.galleriffic.js" type="text/javascript"></script>
     <script src="js/jquery.opacityrollover.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <!--[if lt IE 7]>
     <div style=' clear: both; text-align:center; position: relative;'>
         <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
@@ -48,11 +49,11 @@
                     </h1>
                 </div>
                 <div class="grid_3">
-                    <form id="search-form" method="post" enctype="multipart/form-data">
+                    <form id="search-form" method="get" enctype="multipart/form-data">
                         <fieldset>
                             <div class="search-field">
                                 <input name="search" type="text" placeholder="Rechercher un film" />
-                                <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>
+                                <a class="search-button" href="#" onClick="AffichageResultat()"><span>search</span></a>
                             </div>
                         </fieldset>
                     </form>
@@ -69,7 +70,7 @@
         <div class="bg-top-2">
             <div class="bg">
                 <div class="bg-top-shadow">
-                    <div class="main">
+                    <div class="main" id="resultat">
                         <div class="gallery p3">
                             <div class="wrapper indent-bot">
                                 <div id="gallery" class="content">
