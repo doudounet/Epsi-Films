@@ -8,7 +8,7 @@
 
 try
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=MovieEpsi', 'root', '');
+    $db = new PDO('mysql:host=92.222.39.26;dbname=MovieEpsi', 'MovieEpsi', 'eCJDb9FdBFAYqTrr');
 }
 catch(Exception $e)
 {
@@ -17,4 +17,3 @@ catch(Exception $e)
     echo 'N° : '.$e->getCode();
     exit();
 }
-?>
