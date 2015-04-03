@@ -51,7 +51,7 @@
                     <form id="search-form" method="post" enctype="multipart/form-data">
                         <fieldset>
                             <div class="search-field">
-                                <input name="search" type="text" />
+                                <input name="search" type="text" placeholder="Rechercher un film" />
                                 <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>
                             </div>
                         </fieldset>
@@ -82,22 +82,22 @@
                                 <div id="thumbs" class="navigation">
                                     <ul class="thumbs noscript">
                                         <li>
-                                            <a class="thumb" href="img/fast.jpeg" width="620" height="403" title=""> <img src="img/fast.jpeg" width="140" height="121" alt="" /><span></span> </a>
+                                            <a class="thumb" href="img/img_theme/fast.jpeg" width="620" height="403" title=""> <img src="img/img_theme/fast.jpeg" width="140" height="121" alt="" /><span></span> </a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/adele.jpg" width="620" height="403" title=""> <img src="img/adele.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/adele.jpg" width="620" height="403" title=""> <img src="img/img_theme/adele.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/james.jpg" width="620" height="403" title=""> <img src="img/james.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/james.jpg" width="620" height="403" title=""> <img src="img/img_theme/james.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/vol_coucou.jpg" width="620" height="403" title=""> <img src="img/vol_coucou.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/vol_coucou.jpg" width="620" height="403" title=""> <img src="img/img_theme/vol_coucou.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/le_vent.jpg" width="620" height="403"  title=""> <img src="img/le_vent.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/le_vent.jpg" width="620" height="403"  title=""> <img src="img/img_theme/le_vent.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/edward.jpg"width="620" height="403" title=""> <img src="img/edward.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/edward.jpg"width="620" height="403" title=""> <img src="img/img_theme/edward.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -117,7 +117,7 @@
                                     <h3 class="color-1">Notre Savoir-Faire</h3>
                                     <div class="wrapper">
                                         <article class="grid_6 alpha">
-                                            <figure class="img-indent frame"><img src="img/300.jpg" width="200" height="121" alt="" /></figure>
+                                            <figure class="img-indent frame"><img src="img/img_theme/300.jpg" width="200" height="121" alt="" /></figure>
                                             <div class="extra-wrap">
                                                 <div class="indent-top">
                                                     <ul class="list-1">
@@ -129,7 +129,7 @@
                                             <div class="clear"></div>
                                         </article>
                                         <article class="grid_6 omega">
-                                            <figure class="img-indent frame"><img src="img/birdman.jpeg" width="200" height="121" alt="" /></figure>
+                                            <figure class="img-indent frame"><img src="img/img_theme/birdman.jpeg" width="200" height="121" alt="" /></figure>
                                             <div class="extra-wrap">
                                                 <div class="indent-top">
                                                     <ul class="list-1">

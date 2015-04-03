@@ -67,8 +67,8 @@ p {margin-bottom:18px}
 .menu li a, .list-1 li a, .list-2 li a, .link, .button, .logo {text-decoration:none}
 /*********************************header*************************************/
 header {width:100%;position:relative;z-index:2}
-.row-1 {width:100%;height:71px;background:url(../img/row1-top-tail.gif) left top repeat-x}
-.row-2 {width:100%;min-height:101px;background:url(../img/row2-tail.gif) left top repeat-x #fff}
+.row-1 {width:100%;height:71px;background:url(../img/img_theme/row1-top-tail.gif) left top repeat-x}
+.row-2 {width:100%;min-height:101px;background:url(../img/img_theme/row2-tail.gif) left top repeat-x #fff}
 h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:uppercase;margin-left:-4px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
 	h1 span {display:inline-block;	font-size:28px;	line-height:1.2em;	color:#949494;	letter-spacing:-1px;	padding:29px 0 0 4px}
 .logo {display:inline-block;font-size:60px;line-height:1.2em;;color:#262626;cursor:pointer;letter-spacing:-3px}
@@ -76,16 +76,16 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 /***** menu *****/
 .menu {padding:0;width:100%}
 .menu li {float:left;position:relative}
-	.menu li:first-child {background:url(../img/menu-a-tail.gif) 0 -71px no-repeat}
-.menu li a {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(../img/menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
+	.menu li:first-child {background:url(../img/img_theme/menu-a-tail.gif) 0 -71px no-repeat}
+.menu li a {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(../img/img_theme/menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
 .menu li a:hover,
 .menu li a.active {color:#fff;background-position:left top;background-repeat:repeat-x;background-color:#000}
 /***** search form *****/
 #search-form {padding:35px 0px 0 37px}
 #search-form fieldset {position:relative; width:100%; display:block; overflow:hidden}
-#search-form .search-field {width:181px;height:29px;background:url(../img/search-input-tail.gif) 0 0 repeat-x;border:1px solid #d7d7d7}
+#search-form .search-field {width:181px;height:29px;background:url(../img/img_theme/search-input-tail.gif) 0 0 repeat-x;border:1px solid #d7d7d7}
 #search-form input {width:137px;font-size:13px;line-height:1.23em;padding:6px 10px 7px;font-family:Arial, Helvetica, sans-serif;background:none;border:none;margin:0;outline:none}
-#search-form .search-button {display:block;width:17px;height:16px;text-indent:-5000px;background:url(../img/search-icon.gif) 0 0 no-repeat;position:absolute;right:8px;top:7px}
+#search-form .search-button {display:block;width:17px;height:16px;text-indent:-5000px;background:url(../img/img_theme/search-icon.gif) 0 0 no-repeat;position:absolute;right:8px;top:7px}
 /*********************************content*************************************/
 #content {width:100%;padding:0;position:relative;z-index:1}
 .gallery {padding:20px 0 26px 20px;background:#fff;box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-moz-box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.70)}
@@ -104,12 +104,11 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
  div.controls a {padding: 0px}
  div.ss-controls {float: left;display:none}
  div.nav-controls {position:absolute;left:0px;width:596px;bottom:0px;z-index: 1}
- div.nav-controls a.prev {background:url(../img/prev.gif) no-repeat 0 0;width:39px;height:39px;text-indent:-5000px;position:absolute;bottom:2px;left:0;z-index:11}
- div.nav-controls a.prev:hover {background:url(../img/prev-h.gif) no-repeat 0 0}
- div.nav-controls a.next {background:url(../img/next.gif) no-repeat 0 0;width:39px;height:39px;text-indent:-5000px;position:absolute;bottom:2px;right:0;z-index:11}
- div.nav-controls a.next:hover {background:url(../img/next-h.gif) no-repeat 0 0}
+ div.nav-controls a.prev {width:39px;height:39px;text-indent:-5000px;position:absolute;bottom:2px;left:0;z-index:11}
+ div.nav-controls a.next {width:39px;height:39px;text-indent:-5000px;position:absolute;bottom:2px;right:0;z-index:11}
+
  div.slideshow-container {position: relative;height: 403px; /* This should be set to be at least the height of the largest image in the slideshow */z-index:1}
- div.loader {position: absolute;top: 0;left: 0;background-image:url(img/loader.gif);background-repeat: no-repeat;background-position: center;width: 592px;height: 470px; /* This should be set to be at least the height of the largest image in the slideshow */}
+ div.loader {position: absolute;top: 0;left: 0;background-position: center;width: 592px;height: 470px; /* This should be set to be at least the height of the largest image in the slideshow */}
  div.slideshow {}
  div.slideshow span.image-wrapper {display: block;width: 620px;height: 403px;position:absolute;left:0;top:0}
  div.slideshow a.advance-link {display: block;width: 620px;height: 403px; /* This should be set to be at least the height of the largest image in the slideshow */	padding: 0;margin: 0}
@@ -138,32 +137,32 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
  div.pagination span.current {color:#ffeaa8}
  div.pagination span.ellipsis {border: none;padding: 5px 0 3px 2px}
 /* -- gallery end --*/
-.quote {padding-left:30px;background:url(../img/quote.png) 0 3px no-repeat;position:relative}
-.spacer-1 {width:100%;background:url(../img/pic-1.gif) 217px 0 repeat-y}
+.quote {padding-left:30px}
+.spacer-1 {width:100%}
 h3 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:36px;line-height:1.2em;margin:0 0 22px 0;color:#262626;font-weight:normal;letter-spacing:-2px}
 h6 {color:#ff9601}
-.title {display:inline-block;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:49px;line-height:71px;text-transform:uppercase;letter-spacing:-3px;color:#ff9601;padding:0 25px 0 0;background:url(../img/pic-2.gif) right 0 repeat-y}
-	.title.t2 {font-size:60px;	line-height:1.3em;	padding:0 40px 0 0;	background:url(../img/pic-3.gif) right 0 no-repeat}
+.title {display:inline-block;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:49px;line-height:71px;text-transform:uppercase;letter-spacing:-3px;color:#ff9601;padding:0 25px 0 0}
+	.title.t2 {font-size:60px;	line-height:1.3em;	padding:0 40px 0 0}
 .tdate-1 {display:block;font-weight:bold}
-.border-bot {width:100%;padding-bottom:20px;background:url(../img/pic-1.gif) 0 bottom repeat-x}
+.border-bot {width:100%;padding-bottom:20px}
 .box {width:100%;background:#fff;box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-moz-box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.70)}
-.button {display:inline-block;padding:10px 20px 11px;color:#fff;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:18px;line-height:1.22em;background:url(../img/button-tail.gif) 0 0 repeat-x #000;text-transform:uppercase;letter-spacing:-1px}	
+.button {display:inline-block;padding:10px 20px 11px;color:#fff;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:18px;line-height:1.22em;background:url(../img/img_theme/button-tail.gif) 0 0 repeat-x #000;text-transform:uppercase;letter-spacing:-1px}
 .button:hover {background:#ff9601}
-.list-1 li {display:inline-block;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:21px;line-height:26px;padding:0 0 10px 12px;background:url(../img/marker.png) 0 12px no-repeat;letter-spacing:-1px}
+.list-1 li {display:inline-block;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:21px;line-height:26px;padding:0 0 10px 12px;background:url(../img/img_theme/marker.png) 0 12px no-repeat;letter-spacing:-1px}
 .list-1 li.last {padding:0 0 0 12px}
 	.list-1 li a:hover {color:#fff}
-.list-2 li {line-height:1.23em;padding:8px 0;background:url(../img/pic-1.gif) 0 bottom repeat-x}
-	.list-2 li a {display:inline-block;	color:#262626;	padding-left:10px;	background:url(../img/marker-2.gif) 0 6px no-repeat}
+.list-2 li {line-height:1.23em;padding:8px 0}
+	.list-2 li a {display:inline-block;	color:#262626;	padding-left:10px;	background:url(../img/img_theme/marker-2.gif) 0 6px no-repeat}
 		.list-2 li a:hover {color:#ff9601}
 	.list-2 .last-item {background:none}
-.price-list li {width: 100%;overflow: hidden;vertical-align: top;line-height: 1.23em;padding:7px 0 9px;color: #262626;background:url(../img/pic-1.gif) 0 bottom repeat-x}
+.price-list li {width: 100%;overflow: hidden;vertical-align: top;line-height: 1.23em;padding:7px 0 9px;color: #262626}
 .price-list li.last {background:none}
-	.price-list li strong {background: url(../img/pic-4.gif) 0% 12px repeat-x;	display: block;	overflow: hidden}
+	.price-list li strong {display: block;	overflow: hidden}
 	.price-list li span {float: right;	color: #262626}
-	.price-list li a {float: left;	text-decoration: none;	color: #262626;	padding-left:10px;	background:url(../img/marker-2.gif) 0 5px no-repeat}
+	.price-list li a {float: left;	text-decoration: none;	color: #262626;	padding-left:10px;	background:url(../img/img_theme/marker-2.gif) 0 5px no-repeat}
 		.price-list li a:hover {color:#ff9601}
 .link:hover {text-decoration:underline} 
-.link-1 {display:inline-block;font-size:14px;padding-right:8px;background:url(../img/marker-3.gif) right 8px no-repeat}
+.link-1 {display:inline-block;font-size:14px;padding-right:8px}
 .link-1:hover {color:#fff} 
 .text-1 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:21px;line-height:30px;color:#ff9601;display:block;letter-spacing:-1px} 
 .price {display:inline-block;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:35px;line-height:1.2em;letter-spacing:-2px}
@@ -171,10 +170,10 @@ dl span {float:left; width:93px}
 dl strong {float:left; width:80px; font-weight:normal}
 /***** carousel-style *****/
 .carousel {margin: 0 auto;width:940px;height:229px;overflow:hidden;position:relative}
-.carousel .next {display:block;height:22px;width:11px;position:absolute;right:0px;top:14px;background:url(../img/carousel-control.png) right top no-repeat;text-indent:-5000px}
-.carousel .prev {display:block;height:22px;width:11px;position:absolute;right:31px;top:14px;background:url(../img/carousel-control.png) left top no-repeat;text-indent:-5000px}
+.carousel .next {display:block;height:22px;width:11px;position:absolute;right:0px;top:14px;background:url(../img/img_theme/carousel-control.png) right top no-repeat;text-indent:-5000px}
+.carousel .prev {display:block;height:22px;width:11px;position:absolute;right:31px;top:14px;background:url(../img/img_theme/carousel-control.png) left top no-repeat;text-indent:-5000px}
 .jCarouselLite {left:-12px !important}
-#carousel li {width:200px !important;height:121px !important;padding:17px 22px 27px;margin-right:-4px;background:url(../img/carousel-li-bg.png) left top no-repeat;position:relative;overflow:hidden}
+#carousel li {width:200px !important;height:121px !important;padding:17px 22px 27px;margin-right:-4px;background:url(../img/img_theme/carousel-li-bg.png) left top no-repeat;position:relative;overflow:hidden}
 	#carousel li a {display:block; position:relative}
 	#carousel li a span {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	letter-spacing:-2px;	display:block;	width:78px;	height:35px;	background:#fff;	color:#262626;	font-size:35px;	line-height:1.2em;	position:absolute;	left:0;	bottom:0;	overflow:hidden;	z-index:99}
 /***** subscribe form *****/
@@ -190,13 +189,13 @@ dl strong {float:left; width:80px; font-weight:normal}
 .buttons {padding:18px 30px 0 0; text-align:right}
 .buttons a {margin-left:10px; padding:10px 42px 11px}
 /****************************footer************************/
-footer {width:100%;padding:40px 0 33px;background:url(../img/footer-tail.gif) center top repeat-x #fff}
+footer {width:100%;padding:40px 0 33px;background:url(../img/img_theme/footer-tail.gif) center top repeat-x #fff}
 .phone-numb {display:inline-block;font-size:42px;line-height:1.2em;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;letter-spacing:-1px;margin-top:-4px}
 	.phone-numb span {display:inline-block;	font-size:28px;	color:#949494;	padding-top:3px}
 .list-services {padding:0}
 	.list-services li {float:left;	padding:0 0 0 20px}
 	.list-services li:first-child {padding:0}
-		.list-services li a {	display:block;width:60px;height:45px;background:url(../img/social-icons.png) left top no-repeat;	}
+		.list-services li a {	display:block;width:60px;height:45px;background:url(../img/img_theme/social-icons.png) left top no-repeat;	}
 		.list-services li a.item-2 {background-position:-80px 0}
 		.list-services li a.item-3 {background-position:-160px 0}
 		.list-services li a.item-4 {background-position:-240px 0}
