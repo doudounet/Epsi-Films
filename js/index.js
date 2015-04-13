@@ -1,7 +1,7 @@
 function AffichageResultat()
 { var id=$(this).attr(id);
     $.ajax({
-        url : 'display.php',
+        url : 'index.html',
         data:{"id":id},
         type: 'GET',
 

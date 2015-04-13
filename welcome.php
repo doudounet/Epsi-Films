@@ -83,7 +83,7 @@
                                 <div id="thumbs" class="navigation">
                                     <ul class="thumbs noscript">
                                         <li>
-                                            <a class="thumb" href="img/img_theme/fast.jpeg" width="620" height="403" title=""> <img src="img/img_theme/fast.jpeg" width="140" height="121" alt="" /><span></span> </a>
+                                            <a class="thumb" href="img/img_theme/fast.jpeg" width="620" height="403" title=""> <img src="img/img_theme/fast.jpeg"  width="140" height="121" alt="" /><span></span> </a>
                                         </li>
                                         <li>
                                             <a class="thumb" href="img/img_theme/adele.jpg" width="620" height="403" title=""> <img src="img/img_theme/adele.jpg" width="140" height="121" alt="" /> <span></span></a>
@@ -92,13 +92,13 @@
                                             <a class="thumb" href="img/img_theme/james.jpg" width="620" height="403" title=""> <img src="img/img_theme/james.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/img_theme/vol_coucou.jpg" width="620" height="403" title=""> <img src="img/img_theme/vol_coucou.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/vol_coucou_xl.png" width="620" height="403" title=""> <img src="img/img_theme/vol_coucou_sm.png" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/img_theme/le_vent.jpg" width="620" height="403"  title=""> <img src="img/img_theme/le_vent.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/le_vent_xl.png" title=""> <img src="img/img_theme/le_vent_sm.png" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/img_theme/edward.jpg"width="620" height="403" title=""> <img src="img/img_theme/edward.jpg" width="140" height="121" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/edward.jpg" width="620" height="403" title=""> <img src="img/img_theme/edward.jpg" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                     </ul>
                                 </div>
