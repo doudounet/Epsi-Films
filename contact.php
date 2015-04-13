@@ -17,7 +17,8 @@
                 <div class="grid_12">
                     <nav>
                         <ul class="menu">
-                            <li><a href="welcome.php">Rechercher</a></li>
+                            <li><a href="welcome.php">Accueil</a></li>
+                            <li><a href="rechercher.php">Rechercher</a></li>
                             <li><a href="presentation.php">Qui sommes-nous ?</a></li>
                             <li><a class="active" href="contact.php">Nous contacter</a></li>
                         </ul>
@@ -33,19 +34,9 @@
                 <div class="grid_9">
                     <h1>
                         <a class="logo" href="welcome.php">Eps<strong>i</strong>mdb</a>
-                        <span>Enjoy</span>
                     </h1>
                 </div>
                 <div class="grid_3">
-                    <form id="search-form" method="post" enctype="multipart/form-data">
-                        <fieldset>
-                            <div class="search-field">
-                                <input name="search" type="text" />
-                                <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>Rechercher</span></a>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
                 <div class="clear"></div>
             </div>
         </div>

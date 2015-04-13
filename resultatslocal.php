@@ -31,6 +31,19 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+
+
+
+<script type="text/javascript">
+
+</script>
+<IFRAME src="Data/datatable/film/film.html" width="100%" height="800px" frameborder="0"></IFRAME>
+<!-- simple form, used to add a new row -->
+<div id="filmlocal">
+
+</div>
+=======
 <div id="wrap">
     <h1>Films présents sur le site IMDB  </h1>
     </br>
@@ -50,6 +63,7 @@
 
 
 
+>>>>>>> betty/master
 
 </body>
 

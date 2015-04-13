@@ -13,8 +13,8 @@ class apiOMDB
 
     public function get_data($URL)
     {
-        echo $URL;
-        $data = json_decode(file_get_contents($URL), true);
+
+        $data = json_decode(file_get_contents($URL));
         return $data;
     }
 

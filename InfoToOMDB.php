@@ -15,7 +15,8 @@ $details=json_decode($json);
 
 $api = new apiOMDB();
 $result = $api->find_by_title("spiderman");
-var_dump($result);
+var_dump ($result);
+
 
 $result = $api->find_by_IMDB_ID("tt3696826");
 var_dump($result);
