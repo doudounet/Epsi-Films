@@ -26,7 +26,8 @@ if (isset($_REQUEST['sort']) && is_array($_REQUEST['sort']) )
 if (isset($_REQUEST['searchPhrase']) )
   {
     $search=trim($_REQUEST['searchPhrase']);
-  	$where.= " AND  m.title LIKE '".$search."%' OR  m.year LIKE '".$search."%' OR  g.genre LIKE '".$search."%'  ";
+      echo $search;
+  	$where.= " AND  title LIKE '".$search."%' OR  year LIKE '".$search."%'  ";
 	}
 
 //Handles determines where in the paging count this result set falls in
@@ -47,8 +48,9 @@ else
 //$limit=" LIMIT $limit_l,$limit_h  ";
    
 //NOTE: No security here please beef this up using a prepared statement - as is this is prone to SQL injection.
-$sql="SELECT m.idmovies, replace(m.title,'\"','' ) as title, m.year, g.genre FROM movies m,movies_genres mg,genres g WHERE m.idmovies = mg.idmovies_genres AND mg.idgenres = g.idgenres AND $where ORDER BY m.title ";
-   echo $sql;
+//$sql= "SELECT m.idmovies, replace(m.title,'\"','' ) as title, m.year, g.genre FROM movies m,movies_genres mg,genres g WHERE m.idmovies = mg.idmovies_genres AND mg.idgenres = g.idgenres AND  1=1  AND  (m.title LIKE '%' OR  m.year LIKE '%' OR  g.genre LIKE '%')   ORDER BY m.title";
+$sql="SELECT m.idmovies, replace(m.title,'\"','' ) as title, year, g.genre FROM movies m,movies_genres mg,genres g WHERE m.idmovies = mg.idmovies_genres AND mg.idgenres = g.idgenres AND $where ORDER BY title ";
+   //echo $sql;
 
 $stmt=$db->prepare($sql);
 $stmt->execute();
