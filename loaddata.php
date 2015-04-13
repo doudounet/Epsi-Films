@@ -56,14 +56,14 @@ $grid = new EditableGrid();
 */
 $grid->addColumn('idmovies', 'ID', 'integer', NULL, false); 
 $grid->addColumn('title', 'Title', 'string');  
-$grid->addColumn('genre', 'Genre', 'string'); 
+$grid->addColumn('gender', 'Genre', 'string'); 
 $grid->addColumn('year', 'Année', 'string');  
 
 
 
-$mydb_tablename = (isset($_GET['db_tablename'])) ? stripslashes($_GET['db_tablename']) : 'demo';
+$mydb_tablename = (isset($_GET['db_tablename'])) ? stripslashes($_GET['db_tablename']) : 'movies';
                                                                        
-$result = $mysqli->query('SELECT * FROM movies m,movies_genres mg,genres g WHERE m.idmovies = mg.idmovies AND mg.idgenres = g.idgenres ');
+$result = $mysqli->query('SELECT * FROM movies;');
 $mysqli->close();
 
 // send data to the browser

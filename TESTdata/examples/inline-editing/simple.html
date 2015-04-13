@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+	<title>Editor example - Simple inline editing</title>
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
+	<link rel="stylesheet" type="text/css" href="../../css/dataTables.editor.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="../resources/demo.css">
+	<style type="text/css" class="init">
+
+	table.dataTable tr td:first-child {
+		text-align: center;
+	}
+
+	table.dataTable tr td:first-child:before {
+		content: "\f096"; /* fa-square-o */
+		font-family: FontAwesome;
+	}
+
+	table.dataTable tr.selected td:first-child:before {
+		content: "\f046"; /* fa-check-square-o */
+	}
+
+	table.dataTable tr td.dataTables_empty:first-child:before {
+		content: "";
+	}
+
+	</style>
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/dataTables.editor.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/editor-demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+
+
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "../php/staff.php",
+        table: "#movies",
+		"idSrc": "idmovies",
+        fields: [{
+                label: "Titre:",
+                name: "title"
+            },			
+			{
+                label: "Genre:",
+                name: "gender"
+            }, {
+                label: "Année:",
+                name: "year"
+            }
+        ]
+    } );
+ 
+    // Activate an inline edit on click of a table cell
+    $('#movies').on( 'click', 'tbody td:not(:first-child)', function (e) {
+        editor.inline( this );
+    } );
+ 
+    $('#movies').DataTable( {
+        dom: "Tfrtip",
+        ajax: "../php/staff.php",
+        columns: [
+            { data: null, defaultContent: '', orderable: false },
+            { data: "title" },
+            { data: "gender" },
+			{ data: "year" },
+           
+        ],
+        order: [ 1, 'asc' ],
+        tableTools: {
+            sRowSelect: "os",
+            sRowSelector: 'td:first-child',
+            aButtons: [
+                { sExtends: "editor_create", editor: editor },
+                { sExtends: "editor_edit",   editor: editor },
+                { sExtends: "editor_remove", editor: editor }
+            ]
+        }
+    } );
+} );
+
+
+
+	</script>
+</head>
+
+<body class="dt-example">
+	<div class="container">
+		<section>
+
+
+	<table id="movies" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>
+ 
+                </th>
+                <th>Titre</th>
+                <th>Genre</th>
+                <th>Année</th>
+            </tr>
+        </thead>
+    </table>
+
+
+
+			
+		</div>
+	</section>
+</body>
+</html>

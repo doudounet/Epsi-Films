@@ -17,20 +17,23 @@ $mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 5);
 $mysqli->real_connect($config['db_host'],$config['db_user'],$config['db_password'],$config['db_name']); 
 
 // Get all parameter provided by the javascript
-$name = $mysqli->real_escape_string(strip_tags($_POST['name']));
-$firstname = $mysqli->real_escape_string(strip_tags($_POST['firstname']));
+
+$id = $mysqli->real_escape_string(strip_tags($_POST['idmovies']));
+$titre = $mysqli->real_escape_string(strip_tags($_POST['title']));
+$year = $mysqli->real_escape_string(strip_tags($_POST['year']));
+$gender = $mysqli->real_escape_string(strip_tags($_POST['gender']));
 $tablename = $mysqli->real_escape_string(strip_tags($_POST['tablename']));
 
 $return=false;
-
-$stmt = "INSERT INTO ".$tablename."(idmovies,title,year,number,type,location,language) VALUES (1231231,'$name',1201,NULL,NULL,'location','language')";
+$stmt = "INSERT INTO ".$tablename."(idmovies,title,gender,year) VALUES ($id,'$titre','$gender',$year)";
 	echo($stmt);
 
-    //$stmt->bind_param("ss", $name, $firstname);
+   
 
 if ($mysqli->query($stmt) === TRUE) {
     echo "New record created successfully";
 } else {
+	$error = "Error: " . $sql . "<br>" . $mysqli->error;
     echo "Error: " . $sql . "<br>" . $mysqli->error;
 }
 

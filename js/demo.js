@@ -125,19 +125,23 @@ DatabaseGrid.prototype.addRow = function(id)
 		dataType: "html",
 		data: {
 			tablename : self.editableGrid.name,
-			name:  $("#name").val(),
-			firstname:  $("#firstname").val()
+			idmovies:  $("#idmovies").val(),
+			title:  $("#title").val(),
+			gender:  $("#gender").val(),
+			year:  $("#year").val()
 		},
 		success: function (response) 
 		{ 
 			if (response == "ok" ) {
    
                 // hide form
-                showAddForm();   
-        		$("#name").val('');
-                $("#firstname").val('');
-			    
-                alert("Row added : reload model");
+                showAddForm();  
+				$("#idmovies").val('');
+        		$("#title").val('');
+                $("#gender").val('');
+			    $("#year").val('');
+				
+                alert("Ligne ajoutée : Rafraichir la page");
                 self.fetchGrid();
            	}
             else 
