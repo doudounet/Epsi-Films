@@ -21,6 +21,13 @@
 
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css" type="text/css" media="screen">
+    <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="//cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/js/dataTables.editor.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/resources/syntax/shCore.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/resources/demo.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/resources/editor-demo.js"></script>
 </head>
 
 <body>
@@ -40,60 +47,9 @@
     <div id="paginator"></div>
 </div>
 
-<script src="js/editablegrid-2.1.0-b25.js"></script>
-<script src="js/jquery-1.11.1.min.js" ></script>
-<!-- EditableGrid test if jQuery UI is present. If present, a datepicker is automatically used for date type -->
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-<script src="js/demoIMDB.js" ></script>
-
-<script type="text/javascript">
-
-    var datagrid = new DatabaseGrid();
-    window.onload = function() {
-
-        // key typed in the filter field
-        $("#filter").keyup(function() {
-            datagrid.editableGrid.filter( $(this).val());
-
-            // To filter on some columns, you can set an array of column index
-            //datagrid.editableGrid.filter( $(this).val(), [0,3,5]);
-        });
-
-        $("#showaddformbutton").click( function()  {
-            showAddForm();
-        });
-        $("#cancelbutton").click( function() {
-            showAddForm();
-        });
-
-        $("#addbutton").click(function() {
-            datagrid.addRow();
-        });
 
 
-    };
-</script>
 
-<!-- simple form, used to add a new row -->
-<div id="addform">
-
-    <div class="row">
-        <input type="text" id="Titre" name="Titre" placeholder="Titre" />
-    </div>
-
-    <div class="row">
-        <input type="text" id="Genre" name="Genre" placeholder="Genre" />
-    </div>
-
-    <div class="row">
-        <input type="text" id="Annee" name="Année" placeholder="Année" />
-    </div>
-
-    <div class="row tright">
-        <a id="addbutton" class="button green" ><i class="fa fa-save"></i> Apply</a>
-        <a id="cancelbutton" class="button delete">Cancel</a>
-    </div>
-</div>
 
 </body>
 

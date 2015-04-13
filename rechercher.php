@@ -7,6 +7,98 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
     <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dataTables.editor.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../resources/syntax/shCore.css">
+    <link rel="stylesheet" type="text/css" href="../resources/demo.css">
+    <style type="text/css" class="init">
+
+        table.dataTable tr td:first-child {
+            text-align: center;
+        }
+
+        table.dataTable tr td:first-child:before {
+            content: "\f096"; /* fa-square-o */
+            font-family: FontAwesome;
+        }
+
+        table.dataTable tr.selected td:first-child:before {
+            content: "\f046"; /* fa-check-square-o */
+        }
+
+        table.dataTable tr td.dataTables_empty:first-child:before {
+            content: "";
+        }
+
+    </style>
+    <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="//cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/js/dataTables.editor.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/resources/syntax/shCore.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/resources/demo.js"></script>
+    <script type="text/javascript" language="javascript" src="Data/resources/editor-demo.js"></script>
+    <script type="text/javascript" language="javascript" class="init">
+
+
+        var editor; // use a global for the submit and return data rendering in the examples
+
+        $(document).ready(function() {
+            editor = new $.fn.dataTable.Editor( {
+                ajax: "Data/php/staff.php",
+                table: "#movies",
+
+                fields: [{
+                    label: "ID:",
+                    name: "id"
+
+                },{
+                    label: "Titre:",
+                    name: "title"
+                },
+                    {
+                        label: "Genre:",
+                        name: "gender"
+                    }, {
+                        label: "Année:",
+                        name: "year"
+                    }
+                ]
+            } );
+
+            // Activate an inline edit on click of a table cell
+            $('#movies').on( 'click', 'tbody td:not(:first-child)', function (e) {
+                editor.inline( this );
+            } );
+
+            $('#movies').DataTable( {
+                dom: "Tfrtip",
+                ajax: "Data/php/staff.php",
+                columns: [
+                    { data: null, defaultContent: '', orderable: false },
+                    { data: "title" },
+                    { data: "gender" },
+                    { data: "year" },
+
+                ],
+                order: [ 1, 'asc' ],
+                tableTools: {
+                    sRowSelect: "os",
+                    sRowSelector: 'td:first-child',
+                    aButtons: [
+                        { sExtends: "editor_create", editor: editor },
+                        { sExtends: "editor_edit",   editor: editor },
+                        { sExtends: "editor_remove", editor: editor }
+                    ]
+                }
+            } );
+        } );
+
+
+
+    </script>
 </head>
 <body id="page5">
 <!--==============================header=================================-->
@@ -52,7 +144,7 @@
                 <div class="bg-top-shadow">
                     <div class="main">
                         <div id="resultBDD">
-                    <?php include("index.html"); ?>
+                    <?php include("Data/datatable/film/film.php"); ?>
                         </div>
 
 
