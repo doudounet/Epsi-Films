@@ -1,5 +1,8 @@
 <?php
 
+require_once('./apiOMDB.php');
+
+
 $title = "spiderman";
 
 
@@ -9,6 +12,16 @@ $title = urlencode($title);
 $json=file_get_contents("http://www.omdbapi.com/?s=$title&plot=full&r=json");
 
 $details=json_decode($json);
+
+$api = new apiOMDB();
+$result = $api->find_by_title("spiderman");
+var_dump($result);
+
+$result = $api->find_by_IMDB_ID("tt3696826");
+var_dump($result);
+
+
+
 
 //Check if respose contains the movie information
 //if($details->Response=='True')
@@ -38,8 +51,8 @@ $details=json_decode($json);
     //    echo "coucou";
         //echo $key.' : '.$value.'<br />';
     //}
-    echo count($details);
-    var_dump($details);
+    //echo count($details);
+    //var_dump($details);
 //}
 //Show message if the movie information is not returned by APIs
 //else
