@@ -21,6 +21,7 @@ use
 
 Editor::inst( $db, 'movies' )
 	->fields(
+		Field::inst( 'id' )->validator( 'Validate::notEmpty' ),
 		Field::inst( 'title' )->validator( 'Validate::notEmpty' ),
 		Field::inst( 'year' )->validator( 'Validate::numeric' ),
 		Field::inst( 'gender' )->validator( 'Validate::notEmpty' )
