@@ -67,11 +67,11 @@
                                             <div class="wrapper">
                                                 <article class="grid_4 alpha">
                                                     <div class="indent">
-                                                        <h3 class="prev-indent-bot2">Les développeurs  </h3>
+                                                        <h3 class="prev-indent-bot2">Les développeurs</h3>
                                                         <ul class="list-2">
-                                                            <li>Florian DE SAINT LEGER</li>
-                                                            <li>Florence DELBARRE</li>
-                                                            <li>Ludovic MANTOVANI</li>
+                                                            <li>Florian <strong>DE SAINT LEGER</strong></li>
+                                                            <li>Florence <strong>DELBARRE</strong></li>
+                                                            <li>Ludovic <strong>MANTOVANI</strong></li>
                                                         </ul>
                                                     </div>
                                                 </article>
@@ -79,7 +79,7 @@
                                                     <div class="indent-right">
                                                         <h3 class="p2">L'école EPSI </h3>
                                                         <div class="wrapper prev-indent-bot2">
-                                                            <figure class="img-indent2 frame2"><img src="img/epsi.png" alt="" /></figure>
+                                                            <figure class="img-indent2 frame2"><img src="img/img_theme/epsi.png" alt="" /></figure>
                                                             <div class="extra-wrap">
                                                                 <h6 class="prev-indent-bot">Chacun son choix, chacun sa voie </h6>
                                                                 L’EPSI a mis en place une démarche pédagogique unique. l’employabilité et l’opérationnalité des étudiants sont leurs priorités.
