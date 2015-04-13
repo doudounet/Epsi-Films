@@ -163,11 +163,11 @@ img.icon {
   box-shadow: 3px 3px 3px #636363;
   display: none;
   width: 400px;
-  height: 120px;
-  border-radius: 20px;
+  height: 500px;
+  border-radius: 15px;
   padding: 20px;
   left: 50%;
-  top: 50%;
+  top: 15%;
   margin-left: -200px;
   margin-top: -100px;
   z-index: 1000;

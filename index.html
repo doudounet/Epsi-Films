@@ -56,9 +56,6 @@
                 // key typed in the filter field
                 $("#filter").keyup(function() {
                     datagrid.editableGrid.filter( $(this).val());
-
-                    // To filter on some columns, you can set an array of column index 
-                    //datagrid.editableGrid.filter( $(this).val(), [0,3,5]);
                   });
 
                 $("#showaddformbutton").click( function()  {
@@ -79,16 +76,20 @@
         <!-- simple form, used to add a new row -->
         <div id="addform">
 
+			<div class="row">
+                <input type="text" id="idmovies" name="ID" placeholder="ID" />
+            </div>
+			
             <div class="row">
-                <input type="text" id="Titre" name="Titre" placeholder="Titre" />
+                <input type="text" id="title" name="Titre" placeholder="Titre" />
             </div>
 
              <div class="row">
-                <input type="text" id="Genre" name="Genre" placeholder="Genre" />
+                <input type="text" id="gender" name="Genre" placeholder="Genre" />
             </div>
 			
 			<div class="row">
-                <input type="text" id="Annee" name="Année" placeholder="Année" />
+                <input type="text" id="year" name="Année" placeholder="Année" />
             </div>
 
             <div class="row tright">
