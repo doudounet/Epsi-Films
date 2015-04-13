@@ -144,7 +144,6 @@
                 <div class="bg-top-shadow">
                     <div class="main">
                         <div id="resultBDD">
-                    <?php include("Data/datatable/film/film.php"); ?>
                         </div>
 
 
