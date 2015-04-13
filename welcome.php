@@ -29,7 +29,8 @@
                 <div class="grid_12">
                     <nav>
                         <ul class="menu">
-                            <li><a class="active" href="welcome.php">Rechercher</a></li>
+                            <li><a class="active" href="welcome.php">Accueil</a></li>
+                            <li><a href="rechercher.php">Rechercher</a></li>
                             <li><a href="presentation.php">Qui sommes-nous ? </a></li>
                             <li><a href="contact.php">Nous contacter</a></li>
                         </ul>
@@ -49,14 +50,6 @@
                     </h1>
                 </div>
                 <div class="grid_3">
-                    <form id="search-form" method="get" enctype="multipart/form-data">
-                        <fieldset>
-                            <div class="search-field">
-                                <input name="search" type="text" placeholder="Rechercher un film" />
-                                <a class="search-button" href="#" onClick="AffichageResultat()"><span>search</span></a>
-                            </div>
-                        </fieldset>
-                    </form>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -68,8 +61,6 @@
 <section id="content">
     <div class="bg-top">
         <div class="bg-top-2">
-            <div class="bg">
-                <div class="bg-top-shadow">
                     <div class="main" id="resultat">
                         <div class="gallery p3">
                             <div class="wrapper indent-bot">
@@ -95,7 +86,7 @@
                                             <a class="thumb" href="img/img_theme/vol_coucou_xl.png" width="620" height="403" title=""> <img src="img/img_theme/vol_coucou_sm.png" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="img/img_theme/le_vent_xl.png" title=""> <img src="img/img_theme/le_vent_sm.png" alt="" /> <span></span></a>
+                                            <a class="thumb" href="img/img_theme/le_vent_xl.png" width="620" height="403" title=""> <img src="img/img_theme/le_vent_sm.png" width="140" height="121" alt="" /> <span></span></a>
                                         </li>
                                         <li>
                                             <a class="thumb" href="img/img_theme/edward.jpg" width="620" height="403" title=""> <img src="img/img_theme/edward.jpg" width="140" height="121" alt="" /> <span></span></a>
