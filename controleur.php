@@ -9,9 +9,4 @@ function AffichageResultat() {
     $posts = Affichage();
     require 'display.php';
 }
-
-function read_action($id) {
-    $post = get_post_details_by_id($id);
-    require 'templates/read.php';
-}
 ?>
