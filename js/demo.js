@@ -141,11 +141,11 @@ DatabaseGrid.prototype.addRow = function(id)
                 $("#gender").val('');
 			    $("#year").val('');
 				
-                alert("Ligne ajoutée : Rafraichir la page");
+                alert("Film Ajouté");
                 self.fetchGrid();
            	}
             else 
-              alert("error");
+              alert("Erreur d'ajout ! Le film existe t'il?");
 		},
 		error: function(XMLHttpRequest, textStatus, exception) { alert("Ajax failure\n" + errortext); },
 		async: true
