@@ -28,24 +28,37 @@
     <script type="text/javascript" language="javascript" src="Data/resources/syntax/shCore.js"></script>
     <script type="text/javascript" language="javascript" src="Data/resources/demo.js"></script>
     <script type="text/javascript" language="javascript" src="Data/resources/editor-demo.js"></script>
+<script>
+
+    $(document).ready(function() {
+      $('#moviesIMDB').dataTable( {
+            ajax: {
+                url: "loaddataimdb.php"
+            },
+            columns: [
+                { "Search": "imdbID" },
+                { "Search": "Title" },
+                { "Search": "Year" },
+                { "Search": "Type" }
+            ]
+        } );
+    } );
+</script>
 </head>
 
 <body>
-<div id="wrap">
-    <h1>Films présents sur le site IMDB  </h1>
-    </br>
-    <!-- Feedback message zone -->
-    <div id="message"></div>
+<table id="moviesIMDB" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
 
-    <div id="toolbar">
-        <input type="text" id="filter" name="filter" placeholder="Filtre" />
-    </div>
-    <!-- Grid contents -->
-    <div id="tablecontent"></div>
+        <th></th>
+        <th>Titre</th>
+        <th>Genre</th>
+        <th>Année</th>
+    </tr>
+    </thead>
+</table>
 
-    <!-- Paginator control -->
-    <div id="paginator"></div>
-</div>
 
 
 
