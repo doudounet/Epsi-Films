@@ -1,27 +1,18 @@
 <?php
-//Get the title of the movie
-$title = "Still Alice";
 
-//'y'(Year) key at the end of the url is optional.
-//But its always good practice to sent the year; 
-//as title can be same for multiple movies
-$year = "2014";
+$title = "spiderman";
 
-//Replace spaces and apostrophe mark in the title with html entities
-//This will make title from 'Mr. Bean's Holiday' 
-//to 
-//'Mr.%20Bean%27s%20Holiday'
+
+
 $title = urlencode($title);
 
-//Call the omdb api
-//$json=file_get_contents("http://www.omdbapi.com/?t=$title&y=$year");
-$json=file_get_contents("http://www.omdbapi.com/?t=$title");
+$json=file_get_contents("http://www.omdbapi.com/?s=$title&plot=full&r=json");
 
 $details=json_decode($json);
 
 //Check if respose contains the movie information
-if($details->Response=='True')
-{
+//if($details->Response=='True')
+//{   echo "coucou";
     //Print the movie information
     //echo "IMDB-ID : ".$details->imdbID.'<br>';
     //echo "Title : ".$details->Title.'<br>';
@@ -42,15 +33,17 @@ if($details->Response=='True')
     //echo "Metascore : ".$details->Metascore.'<br>';
     //echo "IMDB Rating : ".$details->imdbRating.'<br>';
     //echo "IMDB Votes : ".$details->imdbVotes.'<br>';
-    foreach ($details as $key => $value)
-    {
-        echo $key.' : '.$value.'<br />';
-    }
-    //var_dump($details);
-}
+    //foreach ($details as $key => $value)
+    //{
+    //    echo "coucou";
+        //echo $key.' : '.$value.'<br />';
+    //}
+    echo count($details);
+    var_dump($details);
+//}
 //Show message if the movie information is not returned by APIs
-else
-{
-    echo "Movie information not available.Please confirm title";
-}
+//else
+//{
+//    echo "Movie information not available.Please confirm title";
+//}
 ?>
