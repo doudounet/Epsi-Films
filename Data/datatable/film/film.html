@@ -5,7 +5,7 @@
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
 
-	<title>Editor example - Simple inline editing</title>
+
 	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
 	<link rel="stylesheet" type="text/css" href="../../css/dataTables.editor.css">
@@ -48,8 +48,12 @@ $(document).ready(function() {
     editor = new $.fn.dataTable.Editor( {
         ajax: "../php/staff.php",
         table: "#movies",
-		"idSrc": "idmovies",
+	
         fields: [{
+                label: "ID:",
+                name: "id"
+				
+            },{
                 label: "Titre:",
                 name: "title"
             },			
@@ -72,7 +76,7 @@ $(document).ready(function() {
         dom: "Tfrtip",
         ajax: "../php/staff.php",
         columns: [
-            { data: null, defaultContent: '', orderable: false },
+			{ data: null, defaultContent: '', orderable: false },
             { data: "title" },
             { data: "gender" },
 			{ data: "year" },
@@ -104,9 +108,8 @@ $(document).ready(function() {
 	<table id="movies" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th>
- 
-                </th>
+			
+                <th></th>
                 <th>Titre</th>
                 <th>Genre</th>
                 <th>Année</th>
